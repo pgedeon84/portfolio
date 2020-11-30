@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="default.css">
+    <link id="theme-style" rel="stylesheet" href="">
     <title>Weblair Reloaded</title>
 </head>
 
@@ -29,22 +30,22 @@
                     <img id="profile_pic" src="images/profile.jpeg" alt="Profile Pictures">
                     <h5 style="text-align: center; line-height: 0;">Personalize Theme</h5>
                     <div id="theme-options-wrapper">
-                        <div class="theme-dot" id="light-mode"></div>
-                        <div class="theme-dot" id="blue-mode"></div>
-                        <div class="theme-dot" id="green-mode"></div>
-                        <div class="theme-dot" id="purple-mode"></div>
+                        <div class="theme-dot" id="light-mode" data-mode="light"></div>
+                        <div class="theme-dot" id="blue-mode" data-mode="blue"></div>
+                        <div class="theme-dot" id="green-mode" data-mode="green"></div>
+                        <div class="theme-dot" id="purple-mode" data-mode="purple"></div>
                     </div>
                     <p id="setting-note">Theme settings will be saved for<br>your next visit</p>
                 </div>
                 <div class="right-column">
                     <div id="preview-shadow">
                         <div id="preview">
-                            <div class="corner" id="corner-tl"></div>
-                            <div class="corner" id="corner-tr"></div>
+                            <div class="corner-circles" id="corner-tl"></div>
+                            <div class="corner-circles" id="corner-tr"></div>
                             <h3>What I Do</h3>
-                            <p>I used to work for Amazon in a past life, now I am a freelance web developer.</p>
-                            <div class="corner" id="corner-br"></div>
-                            <div class="corner" id="corner-bl"></div>
+                            <p>Certified by Le Wagon Coding Bootcamp, rated The Best Coding Bootcamp on Course Report, now I am a freelance web developer.</p>
+                            <div class="corner-circles" id="corner-br"></div>
+                            <div class="corner-circles" id="corner-bl"></div>
                         </div>
                     </div>
                 </div>
@@ -58,46 +59,95 @@
                     <h4>More about me</h4>
                     <p>I build new projects and follow tutorials to enhance my coding skills and speeding up my workflow.</p>
                     <p>While I keep busy learning more, I am open to take on job interviews in search of an awesome team & projects that interest me.</p>
-                </div>
 
-                <hr>
+                    <hr>
 
-                <h4>TOP EXPERTISE</h4>
-                <p>Front-End Developer with primary focus on Angular: <a href="Resume_PatriceGedeon.pdf" target="_blank">Download Resume</a></p>
-                <div id="skills">
-                    <ul>
-                        <li>HTML5</li>
-                        <li>CSS/SASS</li>
-                        <li>Javascript</li>
-                        <li>Angular</li>
-                        <li>Ruby on Rails</li>
-                        <li>React.JS</li>
-                    </ul>
-                    <ul>
-                        <li>NgRx Store</li>
-                        <li>Heroku</li>
-                        <li>Netlify</li>
-                        <li>Git and GitHub</li>
-                        <li>Google Maps API</li>
-
-                    </ul>
+                    <h4>TOP EXPERTISE</h4>
+                    <p>Front-End Developer with primary focus on Angular: <br><a href="Resume_PatriceGedeon.pdf" target="_blank">Download Resume</a></p>
+                    <div id="skills">
+                        <ul>
+                            <li>HTML5</li>
+                            <li>CSS/SASS</li>
+                            <li>Javascript</li>
+                            <li>Angular</li>
+                            <li>Ruby on Rails</li>
+                        </ul>
+                        <ul>
+                            <li>NgRx Store</li>
+                            <li>Heroku</li>
+                            <li>Netlify</li>
+                            <li>Git and GitHub</li>
+                            <li>Google Maps API</li>
+                        </ul>
+                    </div>
                 </div>
                 <div class="social-links">
-
+                    <div>
+                        <img class="social_img" src="images/instagram.png" alt="Instagram Picture">
+                        <img class="social_img" src="images/linkedin.png" alt="LinkedIn Picture">
+                    </div>
+                    <h3>Find me on Instagram & LinkedIn</h3>
+                    <a href="#" target="_blank">Instagram: @prince_da_prettyboy</a>
+                    <br>
+                    <a href="#" target="_blank">LinkedIn: Patrice Gedeon</a>
                 </div>
             </div>
         </div>
     </section>
     <section class="s1">
         <div class="main-container">
-            Portfolio
+            <h3 style="text-align: center;">Some of my past projects</h3>
+            <div class="post-wrapper">
+                <div class="post">
+                    <img class="thumbnail" src="images/coffee-shop.png" alt="Loruki project picture">
+                    <div class="post-preview">
+                        <h6 class="post-title">Joe's Coffee</h6>
+                        <p class="post-intro">
+                            An elegant coffee E-Commerce store front built using Gatsby.js and Stripe to checkout. Very secure.
+                        </p>
+                        <a href="#" target="_blank">Read more...</a>
+                    </div>
+                </div>
+                <div class="post">
+                    <img class="thumbnail" src="images/clubxp.png" alt="Loruki project picture">
+                    <div class="post-preview">
+                        <h6 class="post-title">Club XP</h6>
+                        <p class="post-intro">
+                            Mobile app providing its user with information on clubbing events with live video and messaging feed from clubbers directly from inside.
+                        </p>
+                        <a href="#" target="_blank">Read more...</a>
+                    </div>
+                </div>
+                <div class="post">
+                    <img class="thumbnail" src="images/loruki.png" alt="Loruki project picture">
+                    <div class="post-preview">
+                        <h6 class="post-title">The Loruki Platform</h6>
+                        <p class="post-intro">
+                            Deploy web apps of all kinds, from large scale enterprise APIs to static websites for individuals.
+                        </p>
+                        <a href="#" target="_blank">Read more...</a>
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
     <section class="s2">
         <div class="main-container">
-            Contact
+            <h3 style="text-align: center;">Get In Touch</h3>
+            <form id="contact-form" action="" method="post">
+                <label for="username">Name</label>
+                <input class="input-field" type="text" name="name">
+                <label for="subject">Subject</label>
+                <input class="input-field" type="text" name="subject">
+                <label for="email">Email</label>
+                <input class="input-field" type="email" name="email">
+                <label for="message">Message</label>
+                <textarea class="input-field" name="message"></textarea>
+                <input id="submit-btn" type="submit" value="Send">
+            </form>
         </div>
     </section>
+    <script type="text/javascript" src="script.js"></script>
 </body>
 
 </html>
