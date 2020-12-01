@@ -17,6 +17,7 @@ body {
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scroll-behavior: smooth;
 }
 
 body * {
@@ -165,6 +166,10 @@ ul {
 #navigation li {
     display: inline-block;
     margin: 0 5px;
+}
+
+#contact {
+    scroll-behavior: smooth;
 }
 
 
@@ -413,5 +418,8 @@ ul {
     }
     .right-column {
         justify-content: center;
+    }
+    #preview {
+        left: -20px;
     }
 }
