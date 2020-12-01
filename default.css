@@ -388,21 +388,28 @@ ul {
 }
 
 .input-field {
-    width: 100%;
+    width: 96.5%;
     border-radius: 5px;
     border: 1px solid var(--borderColor);
     outline: none;
-    padding: 10px 5px;
+    padding: 10px 10px;
     font-size: 14px;
 }
 
 #submit-btn {
     background-color: var(--buttonColor);
+    border-radius: 5px;
     margin-top: 10px;
     width: 100%;
     padding: 10px 0;
     color: #fff;
     border: none;
+}
+
+#submit-btn:hover {
+    color: var(--buttonColor);
+    background-color: #fff;
+    border: 3px solid var(--buttonColor);
 }
 
 @media (max-width: 1200px) {
