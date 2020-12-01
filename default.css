@@ -357,6 +357,11 @@ ul {
 
 /* Contact Form */
 
+.hidden {
+    visibility: hidden;
+    height: 0;
+}
+
 #contact-form {
     display: block;
     max-width: 600px;
@@ -382,7 +387,7 @@ ul {
     border-radius: 5px;
     border: 1px solid var(--borderColor);
     outline: none;
-    padding: 10px 0;
+    padding: 10px 5px;
     font-size: 14px;
 }
 
