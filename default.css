@@ -10,6 +10,7 @@
     --previewShadow: #f0ead6;
     --buttonColor: #000;
     --cornerCirclesCorner: #fff;
+    --inputFocusColor: #000;
 }
 
 html,
@@ -394,6 +395,10 @@ ul {
     outline: none;
     padding: 10px 10px;
     font-size: 14px;
+}
+
+.input-field:focus-within {
+    border: 2px solid var(--inputFocusColor);
 }
 
 #submit-btn {
