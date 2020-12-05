@@ -412,9 +412,7 @@ ul {
 }
 
 #submit-btn:hover {
-    color: var(--inputFocusColor);
-    background-color: var(--secondaryColor);
-    border: 2px solid var(--buttonColor);
+    opacity: .6;
 }
 
 @media (max-width: 1200px) {
